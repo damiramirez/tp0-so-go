@@ -3,7 +3,6 @@ package main
 import (
 	"client/globals"
 	"client/utils"
-	"fmt"
 	"log"
 )
 
@@ -29,7 +28,6 @@ func main() {
 
 	// leer de la consola el mensaje
 	valores := utils.LeerConsola()
-	fmt.Println(valores)
 
 	// generamos un paquete y lo enviamos al servidor
 	utils.GenerarYEnviarPaquete(globals.ClientConfig.Ip, globals.ClientConfig.Puerto, valores)
