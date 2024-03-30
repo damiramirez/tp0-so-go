@@ -23,13 +23,12 @@ func main() {
 	log.Printf("Port %d\n", globals.ClientConfig.Puerto)
 
 
-
 	// ADVERTENCIA: Antes de continuar, tenemos que asegurarnos que el servidor esté corriendo para poder conectarnos a él
 
 	// enviar un mensaje al servidor con el valor de la config
 
 	// leer de la consola el mensaje
-	// utils.LeerConsola()
+	utils.LeerConsola()
 
 	// generamos un paquete y lo enviamos al servidor
 	// utils.GenerarYEnviarPaquete()
