@@ -16,7 +16,7 @@ type Paquete struct {
 
 func RecibirPaquetes(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
-	var paquete Paquete
+	var paquete Paquete 
 	err := decoder.Decode(&paquete)
 	if err != nil {
 		log.Printf("error al decodificar mensaje: %s\n", err.Error())
